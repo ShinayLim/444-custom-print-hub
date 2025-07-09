@@ -11,6 +11,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  justify-content: center;
 }
 
 .product-card {
@@ -42,4 +43,27 @@ h2 {
 
 .to-pricelist:hover {
   background: #444;
+}
+
+.header-with-back {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.back-button {
+  text-decoration: none;
+  background-color: #eee;
+  padding: 6px 12px;
+  border-radius: 5px;
+  color: #333;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.back-button:hover {
+  background-color: #ddd;
 }

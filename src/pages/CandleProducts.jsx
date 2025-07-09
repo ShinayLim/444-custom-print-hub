@@ -1,5 +1,5 @@
-// File: src/pages/CandleProducts.jsx
 import "./Products.css";
+import { Link } from "react-router-dom";
 
 const candleProducts = Array.from({ length: 20 }, (_, i) => ({
   id: i + 1,
@@ -10,7 +10,12 @@ const candleProducts = Array.from({ length: 20 }, (_, i) => ({
 export default function CandleProducts() {
   return (
     <div className="products-container">
-      <h2>Candle Souvenirs</h2>
+      <div className="header-with-back">
+        <h2>Candle Souvenirs</h2>
+        <Link to="/products" className="back-button">
+          Back
+        </Link>
+      </div>
       <div className="product-grid">
         {candleProducts.map((item) => (
           <div key={item.id} className="product-card">

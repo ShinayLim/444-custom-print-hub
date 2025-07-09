@@ -1,5 +1,6 @@
 import "./Products.css";
 import { Link } from "react-router-dom";
+import BackToTop from "./../components/BackToTop.jsx";
 
 const candleProducts = Array.from({ length: 20 }, (_, i) => ({
   id: i + 1,
@@ -24,6 +25,7 @@ export default function CandleProducts() {
           </div>
         ))}
       </div>
+      <BackToTop />
     </div>
   );
 }
